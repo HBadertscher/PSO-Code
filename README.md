@@ -1,4 +1,4 @@
 PSO-Code
 ========
 
-ParticleSwarmOptimization
+C++ Code Example for the Paper on ParticleSwarmOptimization
