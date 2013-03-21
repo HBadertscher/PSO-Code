@@ -10,10 +10,8 @@
 #include "Random.h"
 #include <math.h>
 #include <float.h>
-#include <iostream>
-#include <iomanip>
-using std::cout;
-using std::endl;
+#include <stdio.h>
+
 
 Particle::Particle() {
     for(int i=0; i<PosDimension; i++) {        // Init every Dimension with a Random Value
@@ -35,7 +33,7 @@ double Particle::getFitness(void) const {
 }
 
 double Particle::calcFitness(void) {
-    fCurrent = pow(pCurrent.getDim(0),2);    // Fitness Function: x^2
+    fCurrent = pow(pCurrent.getDim(0),2) + pow(pCurrent.getDim(1)-1,2) + 2;    // Fitness Function: x^2 + (y-1)^2 + 2
     if(fCurrent < fPersBest) {
         fPersBest = fCurrent;
         pPersBest = pCurrent;
@@ -51,14 +49,14 @@ void Particle::newPosition(void) {
 void Particle::newVelocity(Position pSocBest) {
     // Cognitive Component
     Position cognitive =  pPersBest - pCurrent;
-    cognitive = cognitive * CogFactor;
+    cognitive = cognitive * getRand(0,CogFactor);
     
     // Social Component
     Position social = pSocBest - pCurrent;
-    social = social * SocFactor;
+    social = social * getRand(0,SocFactor);
 
     // Inertial Component
-    Position inertia = vCurrent * InertWeight;
+    Position inertia = vCurrent * getRand(0,InertWeight);
     
     // Add Components
     vCurrent = inertia + cognitive + social;
@@ -67,13 +65,11 @@ void Particle::newVelocity(Position pSocBest) {
 }
 
 void Particle::printParticle() const {
-    cout << "Particle: Pos(";
+    FILE *pFile = fopen("PSO-Data.txt", "a+");
+    
     for(int i=0; i<PosDimension; i++) {
-        cout << pCurrent.getDim(i) << " ; ";
+        fprintf(pFile, "%3.6f,", pCurrent.getDim(i));
     }
-    cout << ") / Vel(";
-    for(int i=0; i<PosDimension; i++) {
-        cout << vCurrent.getDim(i) << " ; ";
-    }
-    cout << ") / Fit(" << fCurrent << ")" << endl;
+    fprintf(pFile, "%3.6f,", fCurrent);
+    fclose(pFile);
 }

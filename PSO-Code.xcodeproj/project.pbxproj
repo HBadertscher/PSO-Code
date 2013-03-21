@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81186A0B16F76D06009DC3B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81186A0A16F76D06009DC3B0 /* main.cpp */; };
 		81186A0D16F76D06009DC3B0 /* PSO_Code.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81186A0C16F76D06009DC3B0 /* PSO_Code.1 */; };
+		8171742D16F8911400FB4D7F /* Swarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8171742B16F8911400FB4D7F /* Swarm.cpp */; };
 		817E991716F76D8A0066D94B /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817E991116F76D8A0066D94B /* Particle.cpp */; };
 		817E991816F76D8A0066D94B /* Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817E991316F76D8A0066D94B /* Position.cpp */; };
 		817E991916F76D8A0066D94B /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 817E991516F76D8A0066D94B /* Random.cpp */; };
@@ -31,6 +32,8 @@
 		81186A0716F76D06009DC3B0 /* PSO-Code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PSO-Code"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81186A0A16F76D06009DC3B0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		81186A0C16F76D06009DC3B0 /* PSO_Code.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PSO_Code.1; sourceTree = "<group>"; };
+		8171742B16F8911400FB4D7F /* Swarm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Swarm.cpp; sourceTree = "<group>"; };
+		8171742C16F8911400FB4D7F /* Swarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swarm.h; sourceTree = "<group>"; };
 		817E991116F76D8A0066D94B /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		817E991216F76D8A0066D94B /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		817E991316F76D8A0066D94B /* Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Position.cpp; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				817E991516F76D8A0066D94B /* Random.cpp */,
 				817E991616F76D8A0066D94B /* Random.h */,
 				81186A0A16F76D06009DC3B0 /* main.cpp */,
+				8171742B16F8911400FB4D7F /* Swarm.cpp */,
+				8171742C16F8911400FB4D7F /* Swarm.h */,
 				81186A0C16F76D06009DC3B0 /* PSO_Code.1 */,
 			);
 			path = "PSO-Code";
@@ -136,6 +141,7 @@
 				817E991716F76D8A0066D94B /* Particle.cpp in Sources */,
 				817E991816F76D8A0066D94B /* Position.cpp in Sources */,
 				817E991916F76D8A0066D94B /* Random.cpp in Sources */,
+				8171742D16F8911400FB4D7F /* Swarm.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

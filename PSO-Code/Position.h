@@ -11,7 +11,7 @@
 
 
 enum {
-    PosDimension = 1
+    PosDimension = 2
 };
 
 
