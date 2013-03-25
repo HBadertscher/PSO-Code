@@ -10,6 +10,7 @@
 #define PSO_Test_Particle_h
 
 #include "Position.h"
+extern double fitnessFunction(Position* curPos);
 
 const double InertWeight = 0.721;
 const double CogFactor = 1.193;

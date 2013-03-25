@@ -19,7 +19,7 @@ using namespace std;
 int main(int argc, const char * argv[])
 {
     const int NumberOfParticles = 5;
-    const int Iterations = 50;
+    const int Iterations = 100;
     
     Swarm mySwarm(NumberOfParticles, Iterations);
     mySwarm.executeSwarm();
