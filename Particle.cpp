@@ -3,7 +3,7 @@
 //  PSO-Test
 //
 //  Created by Hannes Badertscher on 28.02.13.
-//  Copyright (c) 2013 Hannes Badertscher. All rights reserved.
+//  Licensed under CC-BY-NC-SA
 //
 
 #include "Particle.h"
@@ -14,7 +14,7 @@
 
 
 Particle::Particle() {
-    for(int i=0; i<PosDimension; i++) {        // Init every Dimension with a Random Value
+    for(int i=0; i<PosDimension; i++) {	// Init every Dimension with a Random Value
         pCurrent.setDim(getRand(InitMin, InitMax),i);
         vCurrent.setDim((getRand(InitMin, InitMax) - pCurrent.getDim(i))/2,i);
     }

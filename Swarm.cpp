@@ -3,7 +3,7 @@
 //  PSO-Code
 //
 //  Created by Hannes Badertscher on 19.03.13.
-//  Copyright (c) 2013 Hannes Badertscher. All rights reserved.
+//  Licensed under CC-BY-NC-SA
 //
 
 #include "Swarm.h"
@@ -24,7 +24,8 @@ Swarm::Swarm(int NumberOfParticles, int Iterations) :
             pGlobalBest = particleSwarm[j].getPosition();
         }
     }
-        
+    
+    // Write to File   
     FILE *pFile = fopen("PSO-Data.txt", "a+");
     fprintf(pFile, "\n");
     fclose(pFile);

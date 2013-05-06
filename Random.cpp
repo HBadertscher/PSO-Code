@@ -3,7 +3,9 @@
 //  PSO-Test
 //
 //  Created by Hannes Badertscher on 28.02.13.
-//  Copyright (c) 2013 Hannes Badertscher. All rights reserved.
+//  srandom part by Roman Gassmann
+//
+//  Licensed under CC-BY-NC-SA
 //
 
 #include "Random.h"

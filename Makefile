@@ -1,5 +1,7 @@
 #----------------------------------------------------------------------------------------
 # Makefile for ParticleSwarmOptimization
+# by Hannes Badertscher
+# Licensed under CC-BY-NC-SA
 
 CXX=g++
 CC=gcc

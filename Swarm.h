@@ -3,7 +3,7 @@
 //  PSO-Code
 //
 //  Created by Hannes Badertscher on 19.03.13.
-//  Copyright (c) 2013 Hannes Badertscher. All rights reserved.
+//  Licensed under CC-BY-NC-SA
 //
 
 #ifndef __PSO_Code__Swarm__
