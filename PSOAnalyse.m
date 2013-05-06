@@ -27,6 +27,7 @@ for i=1 : 1 : size(M,1)
 %   plot3(p1(i,1),p1(i,2),fitnessFunction(p1(i,1),p1(i,2)),'o', p2(i,1),p2(i,2),fitnessFunction(p2(i,1),p2(i,2)),'o', p3(i,1),p3(i,2),fitnessFunction(p3(i,1),p3(i,2)),'o', p4(i,1),p4(i,2),fitnessFunction(p4(i,1),p4(i,2)),'o', p5(i,1),p5(i,2),fitnessFunction(p5(i,1),p1(i,2)),'o',p6(i,1),p6(i,2),fitnessFunction(p6(i,1),p6(i,2)),'o',p7(i,1),p7(i,2),fitnessFunction(p7(i,1),p7(i,2)),'o',p8(i,1),p8(i,2),fitnessFunction(p8(i,1),p8(i,2)),'o',p9(i,1),p9(i,2),fitnessFunction(p9(i,1),p9(i,2)),'o',p10(i,1),p10(i,2),fitnessFunction(p10(i,1),p10(i,2)),'o');
    axis([-10 10 -10 10]);
    hold off;
+%   eval(['print -dpng frames/Frame' num2str(i) '.png'])
 %   pause(0.2);
     pause
 end

@@ -34,7 +34,6 @@ double Particle::getFitness(void) const {
 
 double Particle::calcFitness(void) {
     fCurrent = fitnessFunction(&pCurrent);
-//    fCurrent = pow(pCurrent.getDim(0),2) + pow(pCurrent.getDim(1)-1,2) + 2;    // Fitness Function: x^2 + (y-1)^2 + 2
     if(fCurrent < fPersBest) {
         fPersBest = fCurrent;
         pPersBest = pCurrent;
